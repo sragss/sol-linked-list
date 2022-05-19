@@ -20,7 +20,7 @@ describe("LinkedList tests", () => {
         }
         console.log(await ll.getSortedList())
     })
-    it.only("ascending", async () => {
+    it("ascending", async () => {
         let [signer] = await ethers.getSigners()
         let factory = new LinkedList__factory(signer)
         let ll = await factory.deploy(getRandomInt(1000))

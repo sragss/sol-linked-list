@@ -51,8 +51,6 @@ contract LinkedList {
         // Traverse list and insert when appropriate
         bytes32 nextId = items[currentId].next;
         while (nextId != 0x0) {
-            // SenderWithNumber memory nextItem = items[currentItem.next];
-            // SenderWithNumber memory nextItem = items[nextId];
             uint nextNumber = items[nextId].number;
 
             if (nextNumber >= _number) {
